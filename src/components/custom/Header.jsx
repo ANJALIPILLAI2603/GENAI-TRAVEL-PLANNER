@@ -7,7 +7,7 @@ function Header() {
       {/* Flex container to hold the logo and title */}
       <div className="flex items-center">
         <img 
-          src="public/Trip Ease.png" // Ensure the correct path for the image
+          src="public\Trip Ease.png" // Ensure the correct path for the image
           alt="Trip Ease Logo" 
           style={{ width: '8%', height: 'auto' }} // Adjust percentage for responsive sizing
           loading="lazy" // Lazy load for performance

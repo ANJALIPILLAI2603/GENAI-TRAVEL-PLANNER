@@ -4,8 +4,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import CreateTrip from "./create-trip/index.jsx";
-import Header from "./components/custom/Header.jsx"; // Adjust the path as necessary
-// Import the Header component
+import Header from "./components/custom/Header.jsx"; // Make sure this path is correct
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -24,7 +23,7 @@ const root = createRoot(rootElement); // Correct usage of createRoot
 
 root.render(
   <StrictMode>
-    <Header /> {/* Render the Header component */}
+    <Header /> {/* Ensure Header is included in the render method */}
     <RouterProvider router={router} />
   </StrictMode>
 );
