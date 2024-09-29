@@ -1,9 +1,9 @@
 import React from 'react'
 
-function index() {
+function CreateTrip() {
   return (
     <div>Create trip</div>
   )
 }
 
-export default index
+export default CreateTrip
