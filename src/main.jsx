@@ -1,22 +1,24 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import React from 'react'; // Add this line
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import CreateTrip from './create-trip'; // Correct import from the createtrip folder
 
-const router=createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: '/',
-    element:<App/>
+    element: <App />,
   },
   {
     path: '/create-trip',
-    element:<CreateTrip/>
-  }
-])
+    element: <CreateTrip />, // Correctly referencing the CreateTrip component
+  },
+]);
 
-React.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </StrictMode>
+);

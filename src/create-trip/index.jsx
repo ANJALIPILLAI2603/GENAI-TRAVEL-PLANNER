@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-function index() {
+function CreateTrip() {
   return (
-    <div>Create trip</div>
-  )
+    <div>
+      <h1>Create a Trip</h1>
+      {/* Other JSX elements */}
+    </div>
+  );
 }
 
-export default index
+export default CreateTrip; // Ensure correct export
