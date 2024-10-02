@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 THIS IS A TRAVEL PLANNER THAT USES GENERATIVE AI
+=======
+# GENAI-TRAVEL-PLANNER
+>>>>>>> origin/main

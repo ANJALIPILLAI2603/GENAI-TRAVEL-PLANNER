@@ -3,22 +3,28 @@ import { Button } from '../ui/button'; // Adjust the path if necessary
 
 function Header() {
   return (
-    <div className="p-3 shadow-sm flex justify-between items-center px-5 w-full">
+    <div className="p-3 shadow-sm flex justify-between items-center px-5 w-full bg-[#3490f2]"> {/* Added background color */}
       {/* Flex container to hold the logo and title */}
       <div className="flex items-center">
         <img 
-          src="public\Trip Ease.png" // Ensure the correct path for the image
+          
+          src="public/Trip Ease.png" // Ensure the correct path for the image
           alt="Trip Ease Logo" 
-          style={{ width: '10%', height: 'auto' }} // Adjust percentage for responsive sizing
+          style={{ width: '70px', height: 'auto' }} // Fixed width for better alignment
           loading="lazy" // Lazy load for performance
         />
         {/* Title next to the logo */}
-        <h5 className="font-bold text-[30px] ml-4">Trip Ease</h5> {/* Add margin-left for spacing */}
+        <h5 className="font-bold font-serif text-[30px] ml-3" style={{ color: "white" }}>Trip Ease</h5> {/* Adjusted margin for spacing */}
       </div>
 
       {/* Sign In button */}
       <div>
-        <Button className="bg-[#0097b2] text-white px-4 py-2 rounded">
+        <Button className="bg-[#3490f2] text-white px-6 py-2 rounded"
+          style={{
+            fontSize: "1.5rem",
+            borderRadius: "8px",
+            padding: "10px 20px", // Adjusted padding for better size balance
+          }}>
           Sign In
         </Button>
       </div>
