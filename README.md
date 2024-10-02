@@ -1,6 +1,6 @@
-# GENAI-TRAVEL-PLANNER/TRIPEASE
+# GENAI-TRAVEL-PLANNER
 
-TRIPEASE: Your AI-Powered Travel Planner
+#TRIPEASE: Your AI-Powered Travel Planner
 Description:
 
 TRIPEASE simplifies travel planning by offering a personalized itinerary based on your preferences. Simply fill out a form detailing your budget, destination, travel companions, and priorities, and our AI-powered algorithm will curate a tailored travel plan. From hotel recommendations within your budget to suggestions for food, activities, and transportation, TRIPEASE ensures you make the most of your trip. As a unique feature, we provide a downloadable PDF itinerary outlining your trip's schedule, locations, and activities, helping you stay organized and make the most of your adventure.
