@@ -1,1 +1,3 @@
-THIS IS A TRAVEL PLANNER THAT USES GENERATIVE AI
+**TRIP EASE**
+
+A genai based travel planner to make your trip easy peasy.
