@@ -112,7 +112,7 @@ function Hero() {
           unforgettable destinations.
         </h4>
 
-        <Link to="/get-started">
+        <Link to="/create-trip">
           <button
             className="bg-[#2ca7ff] text-white rounded"
             style={{

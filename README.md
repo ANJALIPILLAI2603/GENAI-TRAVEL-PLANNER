@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-THIS IS A TRAVEL PLANNER THAT USES GENERATIVE AI
-=======
 # GENAI-TRAVEL-PLANNER
->>>>>>> origin/main
+
+**TRIP EASE**
+
+A Generative AI-based travel planner to make your trip easy peasy.
+
