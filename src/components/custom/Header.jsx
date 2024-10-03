@@ -4,12 +4,9 @@ import { Button } from '../ui/button'; // Assuming this is correct
 
 function Header() {
   return (
-<<<<<<< HEAD
-    <div className="p-3 shadow-sm flex justify-between items-center px-5 w-full bg-[#ffffff00]"> {/* Added background color */}
+    <div className="flex items-center justify-between p-4 bg-gray-800"> {/* Added justify-between for spacing and background color */}
+      
       {/* Flex container to hold the logo and title */}
-=======
-    <div className="p-3 shadow-sm flex justify-between items-center px-5 w-full bg-[#3490f2]">
->>>>>>> acbd5c8604ff41467dc5848127ff4abe7516cad3
       <div className="flex items-center">
         <img 
           src="/Trip Ease.png" // Ensure the correct path for the image
