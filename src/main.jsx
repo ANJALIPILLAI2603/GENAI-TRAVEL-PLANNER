@@ -5,14 +5,17 @@ import App from "./App.jsx";
 import "./index.css";
 import CreateTrip from "./create-trip/index.jsx";
 import Header from "./components/custom/Header.jsx";
-import HotelRecommendation from './create-trip/HotelRecommendation.jsx'; // Ensure this path is correct
+
+import HotelRecommendation from './create-trip/HotelRecommendation.jsx'; // Make sure this path is correct
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// Define the routes for the app
 const router = createBrowserRouter([
   {
-    path: "/HotelRecommendation",
-    element: <HotelRecommendation />,
+
+    path:"/HotelRecommendation",
+    element: <HotelRecommendation/>
+
   },
   {
     path: "/",
@@ -42,11 +45,13 @@ const router = createBrowserRouter([
 ]);
 
 const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+const root = createRoot(rootElement); // Correct usage of createRoot
 
 root.render(
   <StrictMode>
-    <Header /> {/* Render the Header component */}
+
+    <Header /> {/* Ensure Header is included in the render method */}
+
     <RouterProvider router={router} />
   </StrictMode>
 );
