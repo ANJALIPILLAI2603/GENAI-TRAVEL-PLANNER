@@ -41,3 +41,179 @@
 .read-the-docs {
   color: #888;
 }
+
+/* HotelRecommendation styling */
+.hotel-recommendation-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  width: 60%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.dropdown {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #45a049;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hotel-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.hotel-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hotel-name {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hotel-location,
+.hotel-rating,
+.hotel-price {
+  font-size: 1rem;
+  color: #666;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+.hotel-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.navigation-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.circle {
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.circle:hover {
+  background-color: #45a049;
+  transition: 0.3s;
+}
+
+.circle i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.circle p {
+  font-size: 14px;
+  margin: 0;
+}
+/* src/App.css */
+
+/* Existing styles... */
+
+/* src/App.css */
+
+/* Existing styles... */
+
+.navigation-container {
+  display: flex;
+  justify-content: center; /* Center circles */
+  flex-wrap: wrap; /* Wrap circles to the next line */
+  margin: 20px 0; /* Add margin if needed */
+}
+
+.navigation-circle {
+  width: 60px; /* Adjust size as needed */
+  height: 60px;
+  border-radius: 50%; /* Make it circular */
+  background-color: #007bff; /* Circle color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px; /* Spacing between circles */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text */
+}
+
+.hotel-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: add some border radius */
+  margin-bottom: 10px; /* Space between image and hotel details */
+}
+
+.hotel-card {
+  border: 1px solid #ccc; /* Add border to hotel card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Add some padding */
+  margin-bottom: 20px; /* Space between hotel cards */
+  background-color: #fff; /* Background color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+

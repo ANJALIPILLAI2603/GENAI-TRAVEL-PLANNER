@@ -4,10 +4,15 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import CreateTrip from "./create-trip/index.jsx";
-import Header from "./components/custom/Header.jsx"; // Make sure this path is correct
+import Header from "./components/custom/Header.jsx";
+import HotelRecommendation from './create-trip/HotelRecommendation.jsx'; // Make sure this path is correct
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
+  {
+    path:"/HotelRecommendation",
+    element: <HotelRecommendation/>
+  },
   {
     path: "/",
     element: <App />,
@@ -16,6 +21,22 @@ const router = createBrowserRouter([
     path: "/create-trip",
     element: <CreateTrip />,
   },
+  // {
+  //   path: "/RestaurantRecommendation",
+  //   element: <RestaurantRecommendation />, // Ensure this component exists
+  // },
+  // {
+  //   path: "/Activities",
+  //   element: <Activities />, // Ensure this component exists
+  // },
+  // {
+  //   path: "/Transport",
+  //   element: <Transport />, // Ensure this component exists
+  // },
+  // {
+  //   path: "/Budget",
+  //   element: <Budget />, // Ensure this component exists
+  // },
 ]);
 
 const rootElement = document.getElementById("root");

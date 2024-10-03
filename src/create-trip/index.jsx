@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
+
 import moneyIcon from '../assets/fiat-money.png';
 import soloIcon from '../assets/solo.png';
 import coupleIcon from '../assets/couple.png';
@@ -235,9 +237,15 @@ function CreateTrip() {
           <hr style={styles.divider} />
 
           {/* Submit Button */}
-          <button type="submit" style={styles.button}>Submit</button>
+          <Link to="/HotelRecommendation">
+          <button type="submit" style={styles.button}>Submit</button></Link>
+          
         </form>
+        
+        
+          
       </div>
+      
     </div>
   );
 }
