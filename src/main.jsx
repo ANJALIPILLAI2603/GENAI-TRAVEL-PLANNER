@@ -4,26 +4,32 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import CreateTrip from "./create-trip/index.jsx";
-import Header from "./components/custom/Header.jsx"; // Make sure this path is correct
+import SignIn from "./components/custom/SignIn.jsx"; // Ensure this path is correct
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+// Define the routes for the app
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/create-trip",
-    element: <CreateTrip />,
+    path: "/", // Default route
+    element: <App />, // App component contains Header and Outlet for nested routing
+    children: [
+      {
+        path: "/SignIn", // Route for SignIn
+        element: <SignIn />,
+      },
+      {
+        path: "/create-trip", // Route for CreateTrip
+        element: <CreateTrip />,
+      },
+    ],
   },
 ]);
 
 const rootElement = document.getElementById("root");
-const root = createRoot(rootElement); // Correct usage of createRoot
+const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <Header /> {/* Ensure Header is included in the render method */}
     <RouterProvider router={router} />
   </StrictMode>
 );

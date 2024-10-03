@@ -1,19 +1,24 @@
-import React, { useState } from 'react'; // Import React and useState
-import "./App.css";
-import { Button } from "./components/ui/button";
-import Hero from "./components/custom/Hero.jsx"; // Corrected import path for Hero component
+import React from 'react';
+import { Outlet, useLocation } from 'react-router-dom'; // Import useLocation for route detection
+import Header from "./components/custom/Header.jsx"; // Import Header component
+import Hero from "./components/custom/Hero.jsx"; // Import Hero component
+import "./App.css"; // Import global CSS
 
 function App() {
-  const [count, setCount] = useState(0); // Now this will work
+  const location = useLocation(); // Get current location
 
   return (
-    <>
-      {/* hero */}
-      <Hero />
-      {/* Other components or content can go here */}
-    </>
+    <div>
+      {/* Header is rendered at the top of every page */}
+      <Header />
+
+      {/* Show Hero section only on the homepage */}
+      {location.pathname === '/' && <Hero />}
+
+      {/* This Outlet will render the nested routes (SignIn, CreateTrip, etc.) */}
+      <Outlet />
+    </div>
   );
 }
 
 export default App;
-
