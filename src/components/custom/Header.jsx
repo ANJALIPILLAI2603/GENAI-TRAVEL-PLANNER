@@ -1,32 +1,37 @@
 import React from "react";
-import { Button } from '../ui/button'; // Adjust the path if necessary
+import { Link } from "react-router-dom";
+import { Button } from '../ui/button'; // Assuming this is correct
 
 function Header() {
   return (
+<<<<<<< HEAD
     <div className="p-3 shadow-sm flex justify-between items-center px-5 w-full bg-[#ffffff00]"> {/* Added background color */}
       {/* Flex container to hold the logo and title */}
+=======
+    <div className="p-3 shadow-sm flex justify-between items-center px-5 w-full bg-[#3490f2]">
+>>>>>>> acbd5c8604ff41467dc5848127ff4abe7516cad3
       <div className="flex items-center">
         <img 
-          
-          src="public/Trip Ease.png" // Ensure the correct path for the image
+          src="/Trip Ease.png" // Ensure the correct path for the image
           alt="Trip Ease Logo" 
-          style={{ width: '70px', height: 'auto' }} // Fixed width for better alignment
-          loading="lazy" // Lazy load for performance
+          style={{ width: '70px', height: 'auto' }}
+          loading="lazy"
         />
-        {/* Title next to the logo */}
-        <h5 className="font-bold font-serif text-[30px] ml-3" style={{ color: "white" }}>Trip Ease</h5> {/* Adjusted margin for spacing */}
+        <h5 className="font-bold font-serif text-[30px] ml-3" style={{ color: "white" }}>
+          Trip Ease
+        </h5>
       </div>
 
       {/* Sign In button */}
       <div>
-        <Button className="bg-[#3490f2] text-white px-6 py-2 rounded"
-          style={{
-            fontSize: "1.5rem",
-            borderRadius: "8px",
-            padding: "10px 20px", // Adjusted padding for better size balance
-          }}>
-          Sign In
-        </Button>
+        <Link to="/SignIn">
+          <Button 
+            className="bg-[#3490f2] text-white px-6 py-2 rounded"
+            style={{ fontSize: "1.5rem", borderRadius: "8px", padding: "10px 20px" }}
+          >
+            Sign In
+          </Button>
+        </Link>
       </div>
     </div>
   );
