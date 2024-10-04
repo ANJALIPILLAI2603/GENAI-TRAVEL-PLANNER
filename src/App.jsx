@@ -3,8 +3,8 @@ import "./App.css";
 import { Button } from "./components/ui/button";
 import Hero from "./components/custom/Hero.jsx"; 
 import HotelRecommendation from './create-trip/HotelRecommendation';
-import NavigationCircles from './create-trip/Navigation';
-// Corrected import path for Hero component
+import FoodRecommendation from './create-trip/FoodRecommendation'; // Updated import path
+// import Navigation from './create-trip/Navigation';
 
 function App() {
   const [count, setCount] = useState(0); // Now this will work
@@ -13,13 +13,10 @@ function App() {
     <>
       {/* hero */}
       <Hero />
-      {/* Other components or content can go here */}
-      <HotelRecommendation />
-      {/* Navigation Circles */}
-      <NavigationCircles />
+      
+      
     </>
   );
 }
 
 export default App;
-

@@ -3,9 +3,7 @@ import { Button } from '../ui/button'; // Adjust the path if necessary
 
 function Header() {
   return (
-
-    <div className="p-3 shadow-sm flex justify-between items-center px-5 w-full bg-[#ffffff00]"> {/* Added background color */}
-
+    <div className="p-3 shadow-sm flex justify-between items-center px-5 w-full bg-[#ffffff00]"> 
       {/* Flex container to hold the logo and title */}
       <div className="flex items-center">
         <img 

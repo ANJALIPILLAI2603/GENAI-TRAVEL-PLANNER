@@ -10,8 +10,6 @@ const hotels = [
   { id: 5, name: 'Down da Goa', location: 'Goa', rating: 4.9, price: '$400', image: 'src/assets/hotel2.jpeg' },
 ];
 
-
-
 const HotelRecommendation = () => {
   const [location, setLocation] = useState('');
   const [minRating, setMinRating] = useState(0);
@@ -67,6 +65,10 @@ const HotelRecommendation = () => {
           <p className="no-results">No hotels found matching your criteria.</p>
         )}
       </div>
+
+      <Link to="/FoodRecommendation" className="next-button">
+        Next
+      </Link>
     </div>
   );
 };

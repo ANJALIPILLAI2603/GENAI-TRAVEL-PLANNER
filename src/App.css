@@ -217,3 +217,73 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
 }
 
+.food-list {
+  display: flex;
+  flex-wrap: wrap;  /* Allows wrapping of boxes */
+  justify-content: space-between;  /* Space between boxes */
+  max-width: 800px;  /* Set a maximum width for the container */
+  margin: 0 auto;  /* Center the container */
+}
+
+.food-card {
+  margin: 10px;  /* Spacing between boxes */
+  text-align: center;
+  width: calc(50% - 20px);  /* Set width to 50% minus margin */
+  height: 200px;  /* Fixed height for square shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;  /* Smooth hover effect */
+}
+
+.food-image {
+  width: 100%;
+  height: 70%;  /* Adjust height for image to fit within the box */
+  object-fit: cover;  /* Maintain aspect ratio */
+}
+.food-card:hover {
+  transform: scale(1.05);  /* Slightly enlarge on hover */
+}
+
+.food-image {
+  width: 100%;
+  height: 120px;  /* Fixed height for images */
+  object-fit: cover;  /* Maintain aspect ratio */
+}
+
+.food-name {
+  font-size: 1.1em;  /* Increased font size */
+  margin: 5px 0;  /* Adjusted margin */
+}
+
+.food-location,
+.food-rating,
+.food-price {
+  margin: 3px 0;  /* Adjusted margin */
+  font-size: 0.9em;  /* Consistent font size */
+}
+
+.no-results {
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+
+.next-button-container {
+  text-align: center;
+  margin-top: 20px;  /* Increased margin */
+}
+
+.next-button {
+  padding: 10px 20px;  /* Increased padding */
+  font-size: 1em;  /* Consistent font size */
+  border: none;
+  background-color: #4CAF50;  /* Green background */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #45a049;  /* Darker green on hover */
+}
