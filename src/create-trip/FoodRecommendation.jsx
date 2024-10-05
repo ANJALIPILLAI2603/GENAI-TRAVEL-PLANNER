@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 // Sample restaurant data with images
 const restaurants = [
@@ -70,11 +71,11 @@ const FoodRecommendation = () => {
                 )}
             </div>
 
-            {/* Next Button */}
-            <div className="next-button-container">
-                <button className="next-button" onClick={handleNext}>Next</button>
-            </div>
-        </div>
+            <Link to="/ActivitesRecommendation" className="next-button">
+        Next
+      </Link>
+    </div>
+        
     );
 };
 

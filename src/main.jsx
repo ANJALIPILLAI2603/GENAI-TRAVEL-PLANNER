@@ -7,6 +7,7 @@ import CreateTrip from "./create-trip/index.jsx";
 import Header from "./components/custom/Header.jsx";
 import FoodRecommendation from "./create-trip/FoodRecommendation.jsx";
 import HotelRecommendation from "./create-trip/HotelRecommendation.jsx";// Make sure this path is correct
+import ActivitiesRecommendation from "./create-trip/ActivitiesRecommendation.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
     path: "/create-trip",
     element: <CreateTrip />,
   },
+  {
+    path: "/ActivitesRecommendation",
+    element: <ActivitiesRecommendation />,
+  }
   // Uncomment or add more routes as needed
   // {
   //   path: "/RestaurantRecommendation",
