@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 // Sample restaurant data with images
 const restaurants = [
-    { id: 1, name: 'Taco Heaven', location: 'Goa', rating: 4.6, priceRange: '$$', image: 'https://tse1.mm.bing.net/th?id=OIP.DKK2SeSR79f-DTeeHmqc-QHaE7&pid=Api&P=0&h=180' },
-    { id: 2, name: 'Seafood Paradise', location: 'Goa', rating: 4.8, priceRange: '$$$', image: 'https://tse3.mm.bing.net/th?id=OIP.HRemfWMkwx6zVH-bCHns9wHaFj&pid=Api&P=0&h=180' },
-    { id: 3, name: 'Curry Delight', location: 'Goa', rating: 4.7, priceRange: '$$', image: 'https://tse2.mm.bing.net/th?id=OIP.3fROpInSzgY--B1msdJITQHaHa&pid=Api&P=0&h=180' },
-    { id: 4, name: 'Chaat Corner', location: 'Goa', rating: 4.4, priceRange: '$', image: 'https://tse3.mm.bing.net/th?id=OIP.el2CcF-_TSvmlhopwnHdTAHaHa&pid=Api&P=0&h=180' },
-    { id: 5, name: 'Biryani Bistro', location: 'Goa', rating: 4.9, priceRange: '$$', image: 'https://tse2.mm.bing.net/th?id=OIP.LadujoU81UAUhQjy9gElUwHaHa&pid=Api&P=0&h=180' },
+    { id: 1, name: 'Taco Heaven', location: 'Goa', rating: 4.6, priceRange: '$50', image: 'https://tse1.mm.bing.net/th?id=OIP.DKK2SeSR79f-DTeeHmqc-QHaE7&pid=Api&P=0&h=180' },
+    { id: 2, name: 'Seafood Paradise', location: 'Goa', rating: 4.8, priceRange: '$70', image: 'https://tse3.mm.bing.net/th?id=OIP.HRemfWMkwx6zVH-bCHns9wHaFj&pid=Api&P=0&h=180' },
+    { id: 3, name: 'Curry Delight', location: 'Goa', rating: 4.7, priceRange: '$78', image: 'https://tse2.mm.bing.net/th?id=OIP.3fROpInSzgY--B1msdJITQHaHa&pid=Api&P=0&h=180' },
+    { id: 4, name: 'Chaat Corner', location: 'Goa', rating: 4.4, priceRange: '68', image: 'https://tse3.mm.bing.net/th?id=OIP.el2CcF-_TSvmlhopwnHdTAHaHa&pid=Api&P=0&h=180' },
+    { id: 5, name: 'Biryani Bistro', location: 'Goa', rating: 4.9, priceRange: '$50', image: 'https://tse2.mm.bing.net/th?id=OIP.LadujoU81UAUhQjy9gElUwHaHa&pid=Api&P=0&h=180' },
 ];
 
 const FoodRecommendation = () => {

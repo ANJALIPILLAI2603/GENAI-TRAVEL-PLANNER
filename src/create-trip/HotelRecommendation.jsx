@@ -27,7 +27,7 @@ const HotelRecommendation = () => {
 
   return (
     <div className="hotel-recommendation-container">
-      <h1 className="title">Hotel Recommendations based on your budget</h1>
+      <h1 className="title">Hotel Recommendations</h1>
       <div className="search-container">
         <input
           className="input-field"
@@ -49,7 +49,7 @@ const HotelRecommendation = () => {
         <button className="search-button" onClick={handleSearch}>Search</button>
       </div>
 
-      <h2 className="subtitle">Recommended Hotels:</h2>
+      <h2 className="subtitle">Recommended Hotels based on your budget</h2>
       <div className="hotel-list">
         {filteredHotels.length > 0 ? (
           filteredHotels.map((hotel) => (

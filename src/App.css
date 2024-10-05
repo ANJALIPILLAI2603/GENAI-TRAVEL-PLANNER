@@ -43,7 +43,7 @@
 }
 
 /* HotelRecommendation styling */
-.hotel-recommendation-container {
+.hotel-recommendation-container, .food-recommendation-container {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
@@ -99,13 +99,13 @@
   color: #333;
 }
 
-.hotel-list {
+.hotel-list,.food-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-.hotel-card {
+.hotel-card, .food-card{
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -113,7 +113,7 @@
   text-align: center;
 }
 
-.hotel-name {
+.hotel-name ,.food-name{
   font-size: 1.3rem;
   margin-bottom: 10px;
   color: #333;
@@ -131,7 +131,7 @@
   font-size: 1.2rem;
   color: #999;
 }
-.hotel-image {
+.hotel-image,.food-image {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -201,14 +201,9 @@
   font-weight: bold; /* Bold text */
 }
 
-.hotel-image {
-  width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: add some border radius */
-  margin-bottom: 10px; /* Space between image and hotel details */
-}
 
-.hotel-card {
+
+.hotel-card , .food-card {
   border: 1px solid #ccc; /* Add border to hotel card */
   border-radius: 8px; /* Rounded corners */
   padding: 16px; /* Add some padding */
@@ -217,50 +212,23 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
 }
 
-.food-list {
-  display: flex;
-  flex-wrap: wrap;  /* Allows wrapping of boxes */
-  justify-content: space-between;  /* Space between boxes */
-  max-width: 800px;  /* Set a maximum width for the container */
-  margin: 0 auto;  /* Center the container */
-}
 
-.food-card {
-  margin: 10px;  /* Spacing between boxes */
-  text-align: center;
-  width: calc(50% - 20px);  /* Set width to 50% minus margin */
-  height: 200px;  /* Fixed height for square shape */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.3s;  /* Smooth hover effect */
-}
 
-.food-image {
-  width: 100%;
-  height: 70%;  /* Adjust height for image to fit within the box */
-  object-fit: cover;  /* Maintain aspect ratio */
-}
+
+
 .food-card:hover {
   transform: scale(1.05);  /* Slightly enlarge on hover */
 }
 
-.food-image {
-  width: 100%;
-  height: 120px;  /* Fixed height for images */
-  object-fit: cover;  /* Maintain aspect ratio */
-}
 
-.food-name {
-  font-size: 1.1em;  /* Increased font size */
-  margin: 5px 0;  /* Adjusted margin */
-}
+
+
 
 .food-location,
 .food-rating,
 .food-price {
-  margin: 3px 0;  /* Adjusted margin */
-  font-size: 0.9em;  /* Consistent font size */
+  font-size: 1rem;
+  color: #666;/* Consistent font size */
 }
 
 .no-results {
